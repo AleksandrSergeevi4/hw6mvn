@@ -10,7 +10,7 @@ public class RestService {
             if (money < threshold) {
                 money = money + income - expenses;
             } else {
-                money = threshold - expenses - (money / 3);
+                money = (money - expenses) / 3;
                 restMonths++;
             }
         }
